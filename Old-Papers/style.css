@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{font-family: 'Times New Roman', Times, serif;}
+.fixed{
+    position: fixed;    
+    height: 45px;
+    width: 100%;
+}
+.fixedNav{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 10%;  
+    background-color: #262626;
+    justify-content: flex-start;
+    align-items: center;
+}
+.white{
+    color: white;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.navItem{
+    height: 100%;
+}
+.navItem:hover{
+    transition: .2s;
+    cursor: pointer;
+}
+
+.content{
+    border: 1px solid violet;
+    height: 100%;
+}
+.hamburger{
+    display: block;
+}
+
+@media screen and (min-width: 760px) {
+    body{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .hamburger{
+        display: none;
+    } 
+    .fixed{
+        width: 90%;
+    } 
+}
