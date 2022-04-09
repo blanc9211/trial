@@ -16,7 +16,7 @@ a{
 }
 .fixedNav{
     position: sticky;
-    height: 10%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,8 +46,9 @@ a{
     background-color: #2b2818;
 }
 .Drop a{
-    gap:10px;
+    gap:30px;
     width: 100%;
+    font-size: x-large;
 }
 .course:hover{cursor: pointer;}
 .course:hover .Drop{
