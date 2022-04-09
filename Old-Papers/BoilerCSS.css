@@ -26,7 +26,10 @@ a{
     margin-top: 5px;
     font-size:x-large;
 }
+.hamburger{
+    display: none;
     
+}
 .logo img{
     max-height: 5vh;
     width: auto;
@@ -67,3 +70,8 @@ a{
     border: 0.1px black solid;
 }
 
+
+@media (max-width: 400px)
+{
+    .fixedNav{display: none;}
+}
