@@ -28,7 +28,7 @@ a{
 }
 .hamburger{
     display: none;
-    
+
 }
 .logo img{
     max-height: 5vh;
@@ -71,7 +71,8 @@ a{
 }
 
 
-@media (max-width: 400px)
+@media (max-width: 600px)
 {
     .fixedNav{display: none;}
+    .hamburger{display: block;}
 }
