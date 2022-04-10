@@ -1,30 +1,24 @@
 *{margin: 0;padding: 0;}
-
 body{font-family: 'Times New Roman', Times, serif;
-    background-image: url(bg.png);
+    /* background-image: url(bg.png);
     background-repeat:repeat;
-    height: 100vh;
+    height: 100vh; */
+    background-color: #f6f7f8;
 }
 a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.fixed{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    color: black;
 }
 .fixedNav{
     position: sticky;
     height: 13vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     gap: 1vw;
     flex: 1 1;
-    margin-top: 5px;
     font-size:x-large;
+    background-color: #ffffff;
 }
 .hamburger{
     display: none;
@@ -39,40 +33,63 @@ a{
     transition: .2s;
 }
 .navItem{
-    color: white;
+    color: white;    
 }
+
 .Drop{
     position: absolute;
     overflow: auto;    
     display: none;    
     border: 1px black solid;
-    background-color: #2b2818;
+    border-radius: 5px;
 }
 .Drop a{
     gap:30px;
-    width: 100%;
+    z-index: 10000;
     font-size: x-large;
-}
+}.course{color: black;}
 .course:hover{cursor: pointer;}
 .course:hover .Drop{
     display: block;
     cursor: pointer;
 }
 .Drop a:hover{
-    gap:10px;
-    background-color: rgb(126, 108, 198);
+    gap:10px;    
 }
-
 .content{
-    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin-left: 5%;
+    justify-content: center;
+    gap: 1vh;
 }
 .line{
     border: 0.1px black solid;
+    margin-bottom: 10px ;
 }
+.cards{
+    height: 40vh;
+    width: 100%;
+    border: 1px red solid;
+    text-align: center;
 
-
-@media (max-width: 600px)
+}
+@media (min-width: 700px)
 {
-    .fixedNav{display: none;}
-    .hamburger{display: block;}
+    .cards{
+        width: 20%;
+    }
 }
+@media (max-width: 700px)
+{
+    .cards{
+        width: 100%;
+    }
+    .course{
+        display: none;
+    }
+}
+
+    
+
