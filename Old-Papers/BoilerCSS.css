@@ -90,15 +90,7 @@ a{
         display: none;
     }
 }
-@media (max-width: 900px)
-{
-    .cards{
-        width: 80%;
-    }
-    .course{
-        display: none;
-    }
-}
+
 
     
 
