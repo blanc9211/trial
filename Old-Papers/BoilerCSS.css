@@ -78,7 +78,7 @@ a{
 @media (min-width: 900px)
 {
     .cards{
-        width:45%;
+        width:0%;
     }
     .course{
         display: none;
